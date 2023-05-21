@@ -1,8 +1,8 @@
 using JuMP, Cbc
 
 function P(G::Matrix{Int64}, s::Integer,t::Integer)
-    m=JuMP.Model(Cbc.Optimizer)
-    n=size(G,1)
+    m = JuMP.Model(Cbc.Optimizer)
+    n = size(G,1)
 
     @variable(m, p[i in 1:n , j in 1:n], Bin)
 
