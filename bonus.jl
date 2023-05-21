@@ -106,7 +106,7 @@ end
 @timeit to "Génération d'un graphe de 1000" begin
 println("Génération d'arêtes aléatoires")
 for sommet in 1:n
-    voisins = rand(1:n, 20)  # Sélection aléatoire de 3 voisins pour chaque sommet
+    voisins = rand(1:n, 20)  # Sélection aléatoire de 20 voisins pour chaque sommet
     MATRIX[sommet, voisins] .= 1  # Définition des entrées correspondantes à 1
 end
 
