@@ -20,10 +20,10 @@ In julia run **demo.jl** file. You can change the graph in the demo file by choo
   * Remove edge from 25 to 1
   * Source = 26 - Target = 1
   * SEC = 1.0
-
-                                Time                    Allocations
-  |                  |  ─────────────────────── | ──────────────────────── |
-  |:-----------------|:------:|:------:|
+  
+  
+   |                  |Time                      | Allocations |
+   |:-----------------|:------------------------:|:------------------------:|
    |Tot / % measured: |       29.7s /  91.2%     |      1.12GiB /  97.8%    |
 
   | fonction                                                      | ncalls |  time  |  %tot  |   avg    |   alloc   |   %tot   |   avg   |
@@ -49,3 +49,11 @@ In julia run **demo.jl** file. You can change the graph in the demo file by choo
     * Remove edge from 26 to 10
     * Source = 9 - Target = 10
     * SEC = 12.0
+
+* **BONUS :**
+
+Concernant le bonus, il a été impossible de calculer le sec pour un graphe de 1000 nœuds. Le programme est trop gourmand en RAM.
+
+Le résultat obtenus est pour un graphe de 250 nœuds, avec un temps d'exécution de plus de 40 mn.
+
+Vous pouvez accéder au bench dans le dossier dédier.
