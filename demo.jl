@@ -10,11 +10,11 @@ to = TimerOutput()
 # Démo et résultats du graphe G1
 @timeit to "Totale" begin
 
-@timeit to "sec" begin
+@timeit to "Calcul de la SEC du graphe : sec & P" begin
 min, edge = sec(G1)
 end
 
-@timeit to "coupe_min" begin
+@timeit to "Calcul de l'ensemble minimal d'arêtes à supprimer : coupe_min" begin
 if edge == size(G1, 1)
     xhat = coupe_min(G1,edge,1)
 else
@@ -22,7 +22,7 @@ else
 end
 end
 
-@timeit to "edges" begin
+@timeit to "Affichage de l'ensemble minimal d'arêtes à supprimer: edges" begin
 edges(G1,xhat)
 end
 

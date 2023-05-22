@@ -103,7 +103,7 @@ end
 @timeit to "Totale" begin
 
 
-@timeit to "Génération d'un graphe de 1000" begin
+@timeit to "Génération du graphe de $n" begin
 println("Génération d'arêtes aléatoires")
 for sommet in 1:n
     voisins = rand(1:n, 20)  # Sélection aléatoire de 20 voisins pour chaque sommet
