@@ -26,12 +26,12 @@ In julia run **demo.jl** file. You can change the graph in the demo file by choo
   |:-----------------|:------:|:------:|
    |Tot / % measured: |       29.7s /  91.2%     |      1.12GiB /  97.8%    |
 
- | fonction                                                      | ncalls |  time  |  %tot  |  avg   |  alloc  |  %tot  |  avg   |
- |:--------------------------------------------------------------|:------:|:------:|:------:|:------:|:-------:|:------:|:------:| 
-  | Totale                                                        |   1    | 27.0s  | 100.0% | 27.0s  | 1.09GiB | 100.0% |  1.09GiB|
-  | Calcul de la SEC du graphe : sec & P                          |   1    | 23.5s  | 86.7%  | 23.5s  | 0.97GiB | 88.7%  |  0.97GiB|
-  | Calcul de l'ensemble minimal d'arêtes à supprimer : coupe_min |   1    | 3.28s  | 12.1%  | 3.28s  | 123MiB  | 11.0%  |   123MiB|
-  | Affichage de l'ensemble minimal d'arêtes à supprimer: edges   |   1    | 266ms  | 1.0%   | 266ms  | 2.54MiB | 0.2%   |  2.54MiB|  
+  | fonction                                                      | ncalls |  time  |  %tot  |   avg    |   alloc   |   %tot   |   avg   |
+  |:--------------------------------------------------------------|:------:|:------:|:------:|:--------:|:---------:|:--------:|:-------:| 
+  | Totale                                                        |   1    | 3.96s  | 100.0% | 3.96s    |  110MiB   | 100.0%   | 110MiB  |
+  | Calcul de la SEC du graphe : sec & P                          |   1    | 3.34s  | 84.3%  |  3.34s   | 79.8MiB   |  72.8%   | 79.8MiB |
+  | Calcul de l'ensemble minimal d'arêtes à supprimer : coupe_min |   1    | 590ms  | 14.9%  |  590ms   |  28.9MiB  |  26.4%   | 28.9MiB |
+  | Affichage de l'ensemble minimal d'arêtes à supprimer: edges   |   1    | 33.0ms |  0.8%  |  33.0ms  |  956KiB   |   0.9%   | 956KiB  |  
 
   
 * **Graph 2 :** 
